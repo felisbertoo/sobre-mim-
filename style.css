@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000007;
+    color: #000007;
+}
+
+
+.menu {
+    margin-left: 30px;
+    margin-top: 30px;
+    background-color: white;
+}
+
+.menu .menufaketrigger {
+    position: absolute;
+    z-index: 1000;
+    width: 35px;
+    height: 35px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.menu .menu-lines {
+     position: absolute;
+     z-index: 999;
+     width: 35px;
+     height: 35px;
+
+}
+
+.menu .menu-lines span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: #222326;
+    border-radius: 3px;
+    transition: all ease .2s;
+}
+
+.menu .menufaketrigger:checked ~ .menu-lines span {
+    background-color: #1212e0;
+}
+
+.menu .menufaketrigger:checked~ .menu-lines span:nth-child(1) {
+    transform-origin: 0% 100%;
+    transform: rotate(45deg) scaleX(1.25);
+
+}
+
+
+.menu .menufaketrigger:checked~ .menu-lines span:nth-child(2) {
+    opacity: 0;
+}
+
+
+.menu .menufaketrigger:checked~ .menu-lines span:nth-child(3) {
+    transform-origin: 0% 100%;
+    transform: rotate(-40deg) scaleX(1.25);
+}
+
+.menu ul {
+    position: absolute;
+    z-index: 998;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: calc(100vh - 100px);
+    padding-top: 100px;
+    background-color: #3C3D40;
+    margin-left: -300px;
+    transition: all ease .2s;
+
+}
+
+.menu .menufaketrigger:checked~ul {
+    margin-left: 0;
+}
+
+.menu ul li {
+    padding: 10px 30px;
+
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #D7D7D9;
+    font-size: 22px;
+    transition: all ease .3s;
+}
+
+.menu ul li a:hover {
+    color: #f1eaea;
+}
+
+
+.cabecalho__marca__logo{
+    width: 10%;
+    margin-left: 100px;
+    margin-top: 5px;
+    border-radius: 10%;
+
+}
+
+.cabecalho__marca__nome{
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    height: 100px;
+    margin-top: -90px;
+    font-size: 60px;
+    color:#f7f8fa;
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.apresentacao__imagem {
+    width: 20vw;
+    margin-top: 0px;
+    margin-left: 75vw;
+    border-radius: 10% ;
+}
+
+ .rodape {
+    margin-top: 190px;
+    font-size: 15px;
+    color: #f6f3f3;
+    margin-left: 70px;
+ }
+
+ .rodape_dados {
+    font-size: 20px;
+    color: #faf6f6;
+    margin-left: 40px;
+    margin-top: 10px;
+ }
+
+.apresentacao__conteudo__titulo {
+    color: whitesmoke;
+    font-size: 30px;
+    margin-top: -280px;
+    margin-left: 70px;
+}
+
+.hard {
+    font-size: 40px;
+    color: red;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.text{
+    margin-left: 100px;
+    margin-top: 15px;
+    color: #f8f5f5;
+    font-size: 20px;
+}
+
+.soft {
+        font-size: 40px;
+        color: red;
+        margin-left: 100px;
+        margin-top: 10px;
+
+}
+
+.texto {
+    margin-left: 100px;
+    margin-top: 10px;
+    color: #f7f3f3;
+    font-size: 20px;
+}
+
+.sobre {
+    margin-left: 400px;
+    font-size: 30px;
+    margin-top: -260px;
+    color: #f6f3f3;
+}
